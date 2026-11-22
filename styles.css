@@ -101,7 +101,24 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
 }
-
+@media screen and (min-width:800px) {
+ body {
+    grid-template-columns:1fr 300px;
+ }
+ header, nav, footer {
+    grid-column:1/-1;
+ }
+ nav {
+    display:flex;
+    justify-content: space-around;
+ }
+ .card-row {
+    display:flex;
+ }
+ .card-row section {
+    width:30%;
+ }
+}
 /* ===== Media Query (Medium) ===== */
 /* write a media query for a screen with at least 800px */
 /* change the body's grid template to 1fr 300px */
